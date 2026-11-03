@@ -97,9 +97,7 @@ export default function CartDrawer() {
 
             {lines.length > 0 && (
               <div className="px-6 py-5 border-t border-line space-y-4">
-                <div className="flex items-center justify-between text-sm text-emerald-700 font-medium">
-                  <span>✓ Free US shipping</span>
-                </div>
+                <p className="text-sm text-ink/60">Shipping calculated at checkout.</p>
                 <div className="flex items-center justify-between text-base font-semibold">
                   <span>Subtotal</span>
                   <span>{money(subtotal, currency)}</span>

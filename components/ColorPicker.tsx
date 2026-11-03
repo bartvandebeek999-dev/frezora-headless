@@ -88,7 +88,7 @@ export default function ColorPicker({ product }: { product: Product | null }) {
               Add {active.label} to cart
             </button>
             <p className="mt-4 text-xs text-ink/45">
-              Free US shipping · International rates at checkout · 30-day returns
+              Shipping calculated at checkout · 30-day returns
             </p>
             <div className="mt-6 flex items-center gap-3 p-3 rounded-xl bg-white border border-line">
               <img src="/images/tested-seal.png" alt="Tested by Frezora" className="w-11 h-11" />

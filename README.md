@@ -5,6 +5,13 @@ Storefront API) and hands off to Shopify's own checkout for payment.
 Your existing Shopify theme/backend, Shopify Payments, taxes and orders
 are untouched — this is a new frontend only.
 
+Shipping rates and destination availability are determined by the connected
+Shopify store's shipping configuration at hosted checkout. The storefront
+creates a cart with variant IDs and quantities and redirects to Shopify's
+`checkoutUrl`; it does not fetch shipping rates or collect a shipping address.
+Keep pre-checkout shipping copy region-neutral ("Shipping calculated at
+checkout") rather than promising free shipping or delivery to a specific region.
+
 ## 1. Connect it to your Shopify store
 
 Copy `.env.local.example` to `.env.local` and fill in:
